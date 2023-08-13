@@ -24,8 +24,8 @@ jobs:
       uses: ruby/setup-ruby@v1
       with:
         ruby-version: "2.7" # Not needed with a .ruby-version file
-        bundler-cache: true
-        cache-version: 3
+        #bundler-cache: true
+        #cache-version: 3
     - name: "Build Site"
       run: bundle exec jekyll build --trace
       env:
