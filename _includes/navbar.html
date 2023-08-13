@@ -1,0 +1,9 @@
+{% for item in site.data.navigation %}
+  <li{% if page.url == item.url_de or page.url == item.url_en %} class="active"{% endif %}>
+    {% if page.lang == 'de' %}
+      <a href="{{ item.url_de }}">{{ item.title }}</a>
+    {% else %}
+      <a href="{{ item.url_en }}">{{ item.title }}</a>
+    {% endif %}
+  </li>
+{% endfor %}
