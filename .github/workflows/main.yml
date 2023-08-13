@@ -25,7 +25,7 @@ jobs:
       with:
         ruby-version: "3.0" # Not needed with a .ruby-version file
         bundler-cache: true
-        cache-version: 1
+        cache-version: 2
     - name: "Build Site"
       run: bundle exec jekyll build --trace
       env:
