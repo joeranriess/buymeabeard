@@ -11,12 +11,12 @@ jobs:
 
     steps:
     - name: Checkout code
-      uses: actions/checkout@latest
+      uses: actions/checkout@v2
 
     - name: Setup Ruby
-      uses: actions/setup-ruby@latest
+      uses: actions/setup-ruby@v1
       with:
-        ruby-version: latest
+        ruby-version: 3.0
 
     - name: Install dependencies
       run: |
