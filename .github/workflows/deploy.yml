@@ -34,7 +34,7 @@ jobs:
             submodules: 'true'
 
         - name: Build
-          run: cd app/ && hugo --minify
+          run: hugo --minify
 
         - name: Upload files to S3
           run: aws s3 sync app/public/ s3://${{ env.BUCKET_NAME }}/ --exact-timestamps --delete
