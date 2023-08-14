@@ -1,0 +1,9 @@
+name = "buymeabread_theme"
+license = "MIT"
+description = "Jöran's modification of the vimux blank theme"
+homepage = "https://github.com/vimux/blank/"
+
+[author]
+  name = "Jöran Rieß"
+  homepage = "https://github.com/joeranriess"
+ 
