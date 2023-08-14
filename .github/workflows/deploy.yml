@@ -37,7 +37,7 @@ jobs:
           run: hugo --minify
 
         - name: Upload files to S3
-          run: aws s3 sync app/public/ s3://${{ env.BUCKET_NAME }}/ --exact-timestamps --delete
+          run: aws s3 sync public/ s3://${{ env.BUCKET_NAME }}/ --exact-timestamps --delete
 
   create-cloudfront-invalidation:
     needs: build-and-deploy
